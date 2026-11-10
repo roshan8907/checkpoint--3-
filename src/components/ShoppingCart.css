@@ -1,0 +1,169 @@
+.cart-panel {
+  background: #fff;
+  border: 1px solid #e7eaf1;
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(27, 39, 68, .07);
+  padding: 28px;
+}
+
+.panel-heading,
+.product-row,
+.cart-actions,
+.total-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-heading {
+  margin-bottom: 22px;
+}
+
+.panel-heading h2 {
+  margin: 0 0 5px;
+  font-size: 1.25rem;
+}
+
+.panel-heading p,
+.selection-note {
+  margin: 0;
+  color: #788196;
+  font-size: .9rem;
+}
+
+.item-count {
+  background: #edf3ff;
+  color: #315fba;
+  border-radius: 99px;
+  padding: 8px 12px;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.product-list {
+  border-top: 1px solid #edf0f5;
+}
+
+.product-row {
+  gap: 18px;
+  min-height: 76px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.product-number {
+  color: #a0a8b8;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.product-choice {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.product-choice input {
+  width: 18px;
+  height: 18px;
+  accent-color: #426bd8;
+}
+
+.product-name {
+  font-weight: 650;
+  color: #29344b;
+}
+
+.unit-price {
+  color: #59647a;
+  font-variant-numeric: tabular-nums;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #788196;
+  font-size: .85rem;
+}
+
+.quantity-control select {
+  border: 1px solid #dfe4ed;
+  border-radius: 9px;
+  padding: 8px 10px;
+  background: white;
+  color: #29344b;
+  min-width: 66px;
+}
+
+.quantity-control select:disabled {
+  background: #f3f4f7;
+  color: #a0a8b8;
+}
+
+.cart-actions {
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.total-button {
+  border: 0;
+  border-radius: 10px;
+  background: #315fba;
+  color: white;
+  padding: 13px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.total-button:hover:not(:disabled) {
+  background: #244d9d;
+}
+
+.total-button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.total-result {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #edf7f1;
+  color: #23623d;
+}
+
+.total-result strong {
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 620px) {
+  .cart-panel {
+    padding: 18px;
+  }
+
+  .product-row {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 13px 0;
+  }
+
+  .product-choice {
+    min-width: 55%;
+  }
+
+  .unit-price {
+    margin-left: auto;
+  }
+
+  .cart-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .total-button {
+    width: 100%;
+  }
+}

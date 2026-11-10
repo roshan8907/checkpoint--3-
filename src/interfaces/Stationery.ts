@@ -1,0 +1,1 @@
+export interface Stationery { getCost(): number; getName(): string; }
